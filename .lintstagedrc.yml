@@ -1,1 +1,1 @@
-*.js: eslint
+.js: eslint
