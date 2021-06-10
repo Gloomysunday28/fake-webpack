@@ -1,0 +1,21 @@
+{
+  "name": "fake-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "gitHooks": {
+    "commit-msg": "commitlint -E GIT_PARAMS",
+    "pre-commit": "lint-staged -c .lintstagedrc.yml"
+  },
+  "devDependencies": {
+    "commitlint": "^12.1.4",
+    "eslint": "^7.28.0",
+    "yorkie": "^2.0.0"
+  }
+}
