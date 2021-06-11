@@ -24,15 +24,10 @@
     "commitlint": "^12.1.4",
     "ejs": "^3.1.6",
     "lint-staged": "^11.0.0",
-    "opn": "^6.0.0",
     "yorkie": "^2.0.0"
   },
   "dependencies": {
     "-": "^0.0.1",
     "eslint": "^7.28.0"
-  },
-  "gitHooks": {
-    "pre-commit": "linst-staged -c lintstagedrc.yml",
-    "commit-msg": "commitlint -E GIT_PARAMS"
   }
 }
