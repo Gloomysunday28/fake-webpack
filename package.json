@@ -1,0 +1,38 @@
+{
+  "name": "fake-webpack",
+  "version": "1.0.0",
+  "description": ":zap: 模拟webpack模块化",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gloomysunday28/fake-webpack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gloomysunday28/fake-webpack/issues"
+  },
+  "homepage": "https://github.com/Gloomysunday28/fake-webpack#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "commitlint": "^12.1.4",
+    "ejs": "^3.1.6",
+    "lint-staged": "^11.0.0",
+    "opn": "^6.0.0",
+    "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "-": "^0.0.1",
+    "eslint": "^7.28.0"
+  },
+  "gitHooks": {
+    "pre-commit": "linst-staged -c lintstagedrc.yml",
+    "commit-msg": "commitlint -E GIT_PARAMS"
+  }
+}
