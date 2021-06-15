@@ -23,7 +23,9 @@
     "@babel/preset-env": "^7.14.5",
     "@commitlint/config-conventional": "^12.1.4",
     "commitlint": "^12.1.4",
+    "ejs": "^3.1.6",
     "lint-staged": "^11.0.0",
+    "opn": "^6.0.0",
     "yorkie": "^2.0.0"
   },
   "dependencies": {

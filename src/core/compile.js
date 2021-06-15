@@ -17,7 +17,7 @@ function recursion(route, baseURL = path.join(process.cwd(), 'src')) {
   
   traverse(ast, {
     ImportDeclaration(pathes) {
-      var { node: { specifiers = [], source: { value /* 导入路径 */ } } } = pathes
+      var { node: { source: { value /* 导入路径 */ } } } = pathes
 
       /**
        * import具有多种形式
@@ -26,10 +26,8 @@ function recursion(route, baseURL = path.join(process.cwd(), 'src')) {
        *  3. * all
        * 在AST节点里都是ImportDelaration类型, 区别就是specifiers不同
        */
-      specifiers.forEach(() => {
-        recursion(value, currentPath)
-      })
-      
+     
+      recursion(value, currentPath)
       // 修改require里的路径，与依赖树形成映射关系
       pathes.node.source.value = path.join(path.dirname(currentPath)/* 当前文件所在的位置 */, value)
     }
