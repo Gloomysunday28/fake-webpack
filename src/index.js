@@ -1,7 +1,7 @@
 const path = require('path')
 const open = require('opn')
 const compile = require('./core/compile')
-const generateTemplate = require('./core/template')
+const generateTemplate = require('./core/generate')
 const { resolve } = require('./utils')
 
 const cwd = process.cwd()
