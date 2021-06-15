@@ -10,10 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "gitHooks": {
-    "commit-msg": "commitlint -E GIT_PARAMS",
-    "pre-commit": "lint-staged -c .lintstagedrc.yml"
-  },
   "devDependencies": {
     "commitlint": "^12.1.4",
     "eslint": "^7.28.0",
